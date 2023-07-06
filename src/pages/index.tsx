@@ -41,9 +41,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center gap-8">
+        <section className="flex flex-col items-center gap-16">
           <div>
-            <h3 className="text-[32px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
+            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4">
               Keep track of your snippets
             </h3>
             <p>
@@ -52,15 +52,111 @@ export default function Home() {
               Mac and iOS apps will help you organize everything.
             </p>
           </div>
-          <div className="flex flex-col items-center w-full gap-8 md:flex-row">
+          <div className="flex flex-col items-center w-full gap-14 md:flex-row">
             <div className="w-full h-full md:relative md:basis-1/2 md:h-[30rem]">
               <Image
                 className="h-full md:object-cover md:absolute md:top-0 md:right-0 md:overflow-x-visible md:-translate-x-[12rem] lg:-translate-x-[9rem] xl:-translate-x-24 transition-all duration-75"
                 src="/img/image-computer.png"
                 width={752}
                 height={572}
-                alt="Computer illustration"
+                alt="picture of a computer"
               />
+            </div>
+            <div className="flex flex-col gap-8 md:text-left md:basis-2/3 md:pb-24">
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                  Quick Search
+                </h4>
+                <p>
+                  Easily search your snippets by content, category, web address,
+                  application, and more.
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                  iCloud Sync
+                </h4>
+                <p>
+                  Instantly saves and syncs snippets across all your devices.
+                </p>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                  Complete History
+                </h4>
+                <p>
+                  Retrieve any snippets from the first moment you started using
+                  the app.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center gap-8">
+          <div>
+            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4">
+              Access Clipboard Anywhere
+            </h3>
+            <p>
+              Whether you’re on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+          </div>
+          <Image
+            src="/img/image-devices.png"
+            width={500}
+            height={500}
+            alt="Multiple devices"
+          />
+        </section>
+
+        <section className="flex flex-col items-center gap-12">
+          <div>
+            <h3>Supercharge your workflow</h3>
+            <p>We’ve got the tools to boost your productivity..</p>
+          </div>
+          <div className="flex flex-col gap-8 md:flex-row">
+            <div className="flex flex-col items-center gap-2 sm:flex-1">
+              <Image
+                src="/img/icon-blacklist.svg"
+                height={36}
+                width={36}
+                alt="Blacklist icon"
+                className="mb-4"
+              />
+              <h4>Create blacklists</h4>
+              <p>
+                Ensure sensitive information never makes its way to your
+                clipboard by excluding certain sources.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2 sm:flex-1">
+              <Image
+                src="/img/icon-text.svg"
+                height={36}
+                width={36}
+                alt="Text icon"
+                className="mb-4"
+              />
+              <h4>Plain text snippets</h4>
+              <p>
+                Remove unwanted formatting from copied text for a consistent
+                look.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2 sm:flex-1">
+              <Image
+                src="/img/icon-preview.svg"
+                height={36}
+                width={36}
+                alt="Preview icon"
+                className="mb-4"
+              />
+              <h4>Sneak preview</h4>
+              <p>
+                Quick preview of all snippets on your Clipboard for easy access.
+              </p>
             </div>
           </div>
         </section>
