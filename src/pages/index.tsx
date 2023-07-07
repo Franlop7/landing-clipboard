@@ -6,6 +6,29 @@ const bai = Bai_Jamjuree({
   weight: ["400", "600"],
 });
 
+const brandLogos = [
+  {
+    url: "/img/logo-google.png",
+    alt: "Google logo",
+  },
+  {
+    url: "/img/logo-ibm.png",
+    alt: "IBM logo",
+  },
+  {
+    url: "/img/logo-microsoft.png",
+    alt: "Microsoft logo",
+  },
+  {
+    url: "/img/logo-hp.png",
+    alt: "HP logo",
+  },
+  {
+    url: "/img/logo-vector-graphics.png",
+    alt: "Vector Graphics logo",
+  },
+];
+
 export default function Home() {
   return (
     <div
@@ -113,7 +136,9 @@ export default function Home() {
 
         <section className="flex flex-col items-center gap-12">
           <div>
-            <h3>Supercharge your workflow</h3>
+            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4">
+              Supercharge your workflow
+            </h3>
             <p>We’ve got the tools to boost your productivity..</p>
           </div>
           <div className="flex flex-col gap-8 md:flex-row">
@@ -125,7 +150,9 @@ export default function Home() {
                 alt="Blacklist icon"
                 className="mb-4"
               />
-              <h4>Create blacklists</h4>
+              <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                Create blacklists
+              </h4>
               <p>
                 Ensure sensitive information never makes its way to your
                 clipboard by excluding certain sources.
@@ -139,7 +166,9 @@ export default function Home() {
                 alt="Text icon"
                 className="mb-4"
               />
-              <h4>Plain text snippets</h4>
+              <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                Plain text snippets
+              </h4>
               <p>
                 Remove unwanted formatting from copied text for a consistent
                 look.
@@ -153,11 +182,41 @@ export default function Home() {
                 alt="Preview icon"
                 className="mb-4"
               />
-              <h4>Sneak preview</h4>
+              <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                Sneak preview
+              </h4>
               <p>
                 Quick preview of all snippets on your Clipboard for easy access.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center md:max-w-[900px] md:max-h-full">
+            {brandLogos.map(({ url, alt }) => (
+              <div key={alt} className="relative w-32 h-12 md:w-[6.5rem]">
+                <Image className="object-contain" src={url} alt={alt} fill />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center gap-10">
+          <div>
+            <h2>Clipboard for iOS and Mac OS</h2>
+            <p>
+              Available for free on the App Store. Download for Mac or iOS, sync
+              with iCloud and you’re ready to start adding to your clipboard.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center w-full gap-6 sm:flex-row">
+            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-strong-cyan shadow-strong-cyan/25 active:shadow-strong-cyan/10 hover:bg-strong-cyan/95 hover:shadow-strong-cyan/25">
+              Dowload for iOS
+            </button>
+            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-light-conic shadow-light-conic/25 active:shadow-light-conic/10 hover:bg-light-conic/95 hover:shadow-light-conic/25">
+              Dowload for Mac
+            </button>
           </div>
         </section>
       </main>
