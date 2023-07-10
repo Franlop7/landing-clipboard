@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { Bai_Jamjuree } from "next/font/google";
 
+import Button from "@/components/Button/Button";
+import Nav from "@/components/Nav";
+import Social from "@/components/Social/Social";
+
 const bai = Bai_Jamjuree({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -55,12 +59,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col justify-center w-full gap-6 sm:flex-row">
-            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-strong-cyan shadow-strong-cyan/25 active:shadow-strong-cyan/10 hover:bg-strong-cyan/95 hover:shadow-strong-cyan/25">
-              Dowload for iOS
-            </button>
-            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-light-conic shadow-light-conic/25 active:shadow-light-conic/10 hover:bg-light-conic/95 hover:shadow-light-conic/25">
-              Dowload for Mac
-            </button>
+            <Button color="ios">Download for iOS</Button>
+            <Button color="mac">Download for Mac</Button>
           </div>
         </section>
 
@@ -103,7 +103,7 @@ export default function Home() {
                   Instantly saves and syncs snippets across all your devices.
                 </p>
               </div>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-2">
                 <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
                   Complete History
                 </h4>
@@ -204,22 +204,32 @@ export default function Home() {
 
         <section className="flex flex-col items-center gap-10">
           <div>
-            <h2>Clipboard for iOS and Mac OS</h2>
+            <h2 className="text-[32px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
+              Clipboard for iOS and Mac OS
+            </h2>
             <p>
               Available for free on the App Store. Download for Mac or iOS, sync
               with iCloud and you’re ready to start adding to your clipboard.
             </p>
           </div>
           <div className="flex flex-col justify-center w-full gap-6 sm:flex-row">
-            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-strong-cyan shadow-strong-cyan/25 active:shadow-strong-cyan/10 hover:bg-strong-cyan/95 hover:shadow-strong-cyan/25">
-              Dowload for iOS
-            </button>
-            <button className="w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl bg-light-conic shadow-light-conic/25 active:shadow-light-conic/10 hover:bg-light-conic/95 hover:shadow-light-conic/25">
-              Dowload for Mac
-            </button>
+            <Button color="ios">Download for iOS</Button>
+            <Button color="mac">Download for Mac</Button>
           </div>
         </section>
       </main>
+      <footer className="py-16 m-auto mt-32 bg-background min-h-7xl">
+        <div className="flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl">
+          <Image
+            src="/img/logo.svg"
+            height={72}
+            width={72}
+            alt="Clipboard logo"
+          />
+          <Nav />
+          <Social />
+        </div>
+      </footer>
     </div>
   );
 }
