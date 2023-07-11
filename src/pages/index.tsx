@@ -50,7 +50,7 @@ export default function Home() {
         </header>
         <section className="flex flex-col items-center gap-10">
           <div>
-            <h2 className="text-[32px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
+            <h2 className="text-[30px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
               A history of everything you copy
             </h2>
             <p>
@@ -66,7 +66,7 @@ export default function Home() {
 
         <section className="flex flex-col items-center gap-16">
           <div>
-            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4">
+            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4 mt-24">
               Keep track of your snippets
             </h3>
             <p>
@@ -118,7 +118,7 @@ export default function Home() {
 
         <section className="flex flex-col items-center gap-8">
           <div>
-            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4">
+            <h3 className="text-2xl text-center text-dark-grayish-blue font-semibold mb-4 mt-24">
               Access Clipboard Anywhere
             </h3>
             <p>
@@ -193,7 +193,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center md:max-w-[900px] md:max-h-full">
+          <div className="grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center mt-14 mb-14 md:max-w-[900px] md:max-h-full">
             {brandLogos.map(({ url, alt }) => (
               <div key={alt} className="relative w-32 h-12 md:w-[6.5rem]">
                 <Image className="object-contain" src={url} alt={alt} fill />
@@ -202,9 +202,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center gap-10">
+        <section className="flex flex-col items-center gap-10 mb-16">
           <div>
-            <h2 className="text-[32px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
+            <h2 className="text-[30px] text-center text-dark-grayish-blue font-semibold leading-snug mb-4">
               Clipboard for iOS and Mac OS
             </h2>
             <p>
