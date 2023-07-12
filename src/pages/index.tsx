@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-8 md:text-left md:basis-2/3 md:pb-24">
               <div className="flex flex-col gap-1">
-                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold md:text-left">
                   Quick Search
                 </h4>
                 <p>
@@ -96,7 +96,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-1">
-                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold md:text-left">
                   iCloud Sync
                 </h4>
                 <p>
@@ -104,7 +104,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold">
+                <h4 className="text-xl text-center text-dark-grayish-blue font-semibold md:text-left">
                   Complete History
                 </h4>
                 <p>
