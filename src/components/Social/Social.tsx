@@ -33,7 +33,6 @@ function Social() {
               alt={alt}
               width={32}
               height={32}
-              className='hover:text-primary'
             />
           </a>
         ))}
