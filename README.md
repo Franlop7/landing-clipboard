@@ -21,4 +21,4 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-click [here](). to see the project
+click [here]() to see the project.
