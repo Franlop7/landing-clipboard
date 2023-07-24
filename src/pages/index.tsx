@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Bai_Jamjuree } from "next/font/google";
 
+import { brandLogos } from "@/pages/api/brandLogos";
+
 import Button from "@/components/Button/Button";
 import Nav from "@/components/Nav";
 import Social from "@/components/Social/Social";
@@ -9,29 +11,6 @@ const bai = Bai_Jamjuree({
   subsets: ["latin"],
   weight: ["400", "600"],
 });
-
-const brandLogos = [
-  {
-    url: "/img/logo-google.png",
-    alt: "Google logo",
-  },
-  {
-    url: "/img/logo-ibm.png",
-    alt: "IBM logo",
-  },
-  {
-    url: "/img/logo-microsoft.png",
-    alt: "Microsoft logo",
-  },
-  {
-    url: "/img/logo-hp.png",
-    alt: "HP logo",
-  },
-  {
-    url: "/img/logo-vector-graphics.png",
-    alt: "Vector Graphics logo",
-  },
-];
 
 export default function Home() {
   return (
